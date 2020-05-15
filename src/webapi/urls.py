@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import detect
+from .views import detect,train
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('face_detection/detect/', detect),
+    path('face_detection/train/', train),
 ]
